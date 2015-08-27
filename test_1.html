@@ -1,0 +1,30 @@
+<!-- 設定網頁編碼為UTF-8 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel=stylesheet type="text/css" href="css/test_1.css">
+
+<head>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/test_1.js"></script>
+</head>
+
+<div id="home" data-role="page">
+  <div data-role="header" data-position="fixed" data-theme="b" style="-webkit-box-shadow:#0000 10px 5px;">
+    <h3>Music Name</h3>
+    <a href="SongsHome.html" class="ui-btn ui-btn-left">Back</a>
+  </div>
+  <div role="main" class="ui-content">
+    <paper-menu-button icon="menu" tabindex="0">
+      <div>Menu Item 1</div>
+      <div>Menu Item 2</div>
+      <div>Menu Item 3</div>
+    </paper-menu-button>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/LTio9QWqNwQ" frameborder="0" allowfullscreen></iframe>
+    <div is="raty" score="3"></div>
+    <core-list id="list" data="{{data}}" style="height:320px;border:1px solid">
+      <template>
+        <paper-item class="item" style="height:100px" label="{{name}}">{{time}}
+          <br>{{details}}</paper-item>
+      </template>
+    </core-list>
+  </div>
+</div>

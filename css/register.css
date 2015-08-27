@@ -1,0 +1,49 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } 
+body, html { font-size: 15px; padding: 0; margin: 0;}
+
+body {
+	font-family: Calibri, Arial,'Microsoft YaHei';
+}
+
+a {
+	cursor:pointer; /*屬標改變*/
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #708090;
+}
+
+.ui-content{
+    width:100%;
+    height:100%;
+    background-image:url(../image/music.jpg); 
+    background-repeat: no-repeat; 
+    -moz-background-size: cover;
+	background-size: cover;
+	position:relative;
+	
+    text-align: center;
+	padding: 10% 20% 10% 20%
+}
+
+.inputs {
+    height: 30px;
+    border: 3px solid #CCDDFF;
+    border-radius: 5px;
+	
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    width: 270px;
+}
+
+.inputs:focus {
+    border-color: #888;
+    outline: none;
+}
+
+/*http://html-generator.weebly.com/css-textbox-style.html*/
